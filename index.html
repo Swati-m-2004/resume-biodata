@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome | Swati Muttannavar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    }
+    .welcome-container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      animation: fadeIn 2s ease;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+    .welcome-container h1 {
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 0 0 20px #ff4081, 0 0 40px #4a148c;
+      animation: glow 2s infinite alternate;
+    }
+    .welcome-container p {
+      color: #fff;
+      margin: 15px 0 25px;
+      font-size: 1.2rem;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 30px;
+      background: #4a148c;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #ff4081;
+      transform: scale(1.1);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff4081; }
+      to { text-shadow: 0 0 25px #4a148c; }
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-container">
+    <h1>✨ Welcome ✨</h1>
+    <p>Explore my Resume & Bio-data</p>
+    <a href="resume.html" class="btn">View Resume</a>
+    <a href="biodata.html" class="btn">View Bio-data</a>
+  </div>
+</body>
+</html>
